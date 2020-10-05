@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h2>Let's Play our childhood game</h2>
+    <p>*but, with computer</p>
+    <div class="buttons">
+        <button class="btn" id="rock" onclick="p1_move('Rock')">Rock</button>
+        <button class="btn" id="paper" onclick="p1_move('Paper')">Paper</button>
+        <button class="btn" id="scissors" onclick="p1_move('Scissors')">Scissors</button>
+    </div>
+    <div class="player-col">
+        <input id='p1_move' class="input" type="text" readonly value="Player 1" >
+        <div class="colon">:</div>
+        <input id="p2_move" class="input" type="text" readonly value="Player 2">
+    </div>
+    <div class="results">
+        <input class="score" type="button" id='play_btn' class="input" value="Restart the Game" onclick="play_again()">
+        <input class="score" type="text" id="score" class="input" value="Your score" readonly>
+    </div>
+</body>
+</html>
+
